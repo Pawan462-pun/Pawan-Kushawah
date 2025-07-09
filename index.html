@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PAWAN KUSHWAHA </title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: bgShift 10s infinite alternate;
+    }
+    @keyframes bgShift {
+      0%   { background: linear-gradient(120deg, #667eea, #764ba2); }
+      50%  { background: linear-gradient(120deg, #4ade80, #facc15); }
+      100% { background: linear-gradient(120deg, #f43f5e, #ff6ec4); }
+    }
+    .card {
+      width: 90%;
+      max-width: 500px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 20px;
+      padding: 2rem;
+      backdrop-filter: blur(15px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      color: #fff;
+      text-align: center;
+    }
+    .owner-photo {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #fff;
+      margin: 0 auto 1rem;
+    }
+    h1 {
+      font-size: 1.8rem;
+      background: linear-gradient(90deg, #ff6ec4, #7873f5, #4ade80, #facc15, #f43f5e);
+      background-size: 300% 300%;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      animation: rainbowText 5s ease infinite;
+      margin-bottom: 0.8rem;
+    }
+    @keyframes rainbowText {
+      0%,100% { background-position: 0% 50%; }
+      50%     { background-position: 100% 50%; }
+    }
+    .socials {
+      margin-bottom: 1rem;
+    }
+    .socials a {
+      margin: 0 0.5rem;
+      font-size: 1.6rem;
+      text-decoration: none;
+      transition: transform .3s;
+    }
+    .socials a:hover { transform: scale(1.2); }
+    .instagram { color: #E1306C; }
+    .snapchat  { color: #FFFC00; }
+    .youtube   { color: #FF0000; }
+    .telegram  { color: #0088cc; }
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: .6rem 1.2rem;
+      border: none;
+      border-radius: 30px;
+      background: #fff;
+      color: #764ba2;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background .3s;
+    }
+    .btn:hover { background: #ffd700; color: #333; }
+    input[type="password"] {
+      display: block;
+      width: 80%;
+      margin: .5rem auto;
+      padding: .5rem;
+      border: none;
+      border-radius: 10px;
+      outline: none;
+      transition: box-shadow .3s;
+    }
+    input.typing {
+      box-shadow: 0 0 10px #fff, 0 0 20px #00f0ff, 0 0 30px #00f0ff;
+    }
+    #login-section, #personal-section {
+      display: none;
+      margin-top: 1rem;
+      text-align: left;
+    }
+    .personal-details img {
+      width: 100%;
+      border-radius: 10px;
+      margin: .5rem 0;
+    }
+    .download-links a {
+      display: block;
+      margin: .3rem 0;
+      color: #ffd700;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .download-links a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+<div class="card">
+  <img src="https://i.imgur.com/En8iJcs.png" alt="Owner Photo" class="owner-photo" />
+  <h1>PAWAN KUSHWAHA </h1>
+  <p>
+    A passionate web developer and designer
+  </p>
+  
+  
+  
+  <div class="socials">
+    
+    <a href="https://www.instagram.com/pk_0_0_2?igsh=bHJ3cGV3b2E4a3p5" class="instagram" title="Instagram">Instagram</a>
+    <a href="https://www.facebook.com/share/1Uh76BUHs3/" class="snapchat" title="Snapchat">facebook</a>
+    <a href="https://www.youtube.com/@MKLBLACK999" class="youtube" title="YouTube">YouTube</a>
+    <a href="https://t.me/pk_0_0_2ap" class="telegram" title="Telegram">Telegram</a>
+  </div>
+
+  <button class="btn" onclick="showLogin()">View Personal Details</button>
+
+  <div id="login-section">
+    <p>Enter password to continue:</p>
+    <input type="password" id="password" placeholder="Password" oninput="typingEffect(this)">
+    <button class="btn" onclick="checkPassword()">Login</button>
+  </div>
+
+  <div id="personal-section" class="personal-details">
+    <h3>👤 Owner Details</h3>
+    <p><strong>Name:</strong> pawan kushwaha</p>
+    <p><strong>Phone:</strong> +91-7042390442</p>
+    <p><strong>Email:</strong> pk1872899@gmail.com</p>
+    <p><strong>DOB:</strong> 10 August 2007</p>
+    <p><strong>Address:</strong> sector 32 Prem jharsa Gurgaon Haryana </p>
+    <img src="https://i.imgur.com/6P6Pkmk.jpeg" alt=" Photo" />
+    <div class="download-links">
+      <a href="https://i.imgur.com/xaLMcY9.jpeg" download>MY id Download</a>
+    </div>
+
+    <h3>👨‍👩‍👧‍👦 Family Members</h3>
+
+    <p><strong>Father:</strong> ramdani kushwaha</p>
+    <p><strong>Phone:</strong> +91‑9654505742</p>
+    <p><strong>Email:</strong> ramdani@example.com</p>
+    <img src="https://via.placeholder.com/300x180" alt="Father Photo" />
+    <div class="download-links">
+      <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" download="Father_Aadhar.pdf">📥 Father Aadhar</a>
+    </div>
+
+    <p><strong>Mother:</strong> malti kushwaha </p>
+    <p><strong>Phone:</strong> +91‑7042390442</p>
+    <p><strong>Email:</strong> malti@example.com</p>
+    <img src="https://via.placeholder.com/300x180" alt="Mother Photo" />
+    <div class="download-links">
+      <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" download="Mother_Aadhar.pdf">📥 Mother Aadhar</a>
+    </div>
+
+    <p><strong>Sister:</strong> SNeha kushwaha</p>
+    <p><strong>Phone:</strong> +91‑7042390442</p>
+    <p><strong>Email:</strong> sneha@example.com</p>
+    <img src="https://via.placeholder.com/300x180" alt="Sister Photo" />
+    <div class="download-links">
+      <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" download="Sister_Aadhar.pdf">📥 Sister Aadhar</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  function showLogin() {
+    document.getElementById('login-section').style.display = 'block';
+  }
+
+  function checkPassword() {
+    const pw = document.getElementById('password').value;
+    if (pw === '12345') {
+      document.getElementById('personal-section').style.display = 'block';
+      document.getElementById('login-section').style.display = 'none';
+    } else {
+      alert('Incorrect password!');
+    }
+  }
+
+  function typingEffect(el) {
+    if (el.value.trim().length) {
+      el.classList.add('typing');
+    } else {
+      el.classList.remove('typing');
+    }
+  }
+</script>
+
+</body>
